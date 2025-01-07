@@ -6,3 +6,4 @@ const canvas = document.getElementById('canvas');
 const mapper = new Mapper(canvas);
 
 mapper.drawMap();
+

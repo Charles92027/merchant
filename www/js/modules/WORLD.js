@@ -87,6 +87,114 @@ export const WORLD = {
         {
             "name": "Calais",
             "row": 7, "col": 12
+        },
+        {
+            "name": "Marseille",
+            "row": 16, "col": 13
+        },
+        {
+            "name": "Tunis",
+            "row": 24, "col": 14
+        },
+        {
+            "name": "Hamburg",
+            "row": 4, "col": 16
+        },
+        {
+            "name": "Genoa",
+            "row": 16, "col": 16
+        },
+        {
+            "name": "Frankfurt",
+            "row": 9, "col": 17
+        },
+        {
+            "name": "Florence",
+            "row": 17, "col": 19
+        },
+        {
+            "name": "Tripoli",
+            "row": 28, "col": 20
+        },
+        {
+            "name": "Katsina",
+            "row": 36, "col": 20
+        },
+        {
+            "name": "Venice",
+            "row": 15, "col": 21
+        },
+        {
+            "name": "Rome",
+            "row": 19, "col": 21
+        },
+        {
+            "name": "Danzig",
+            "row": 5, "col": 23
+        },
+        {
+            "name": "Budapest",
+            "row": 11, "col": 24
+        },
+        {
+            "name": "Al Fashir",
+            "row": 37, "col": 28
+        },
+        {
+            "name": "Novogorod",
+            "row": 1, "col": 29
+        },
+        {
+            "name": "Sofala",
+            "row": 53, "col": 29
+        },
+        {
+            "name": "Byzantium",
+            "row": 17, "col": 30
+        },
+        {
+            "name": "Cairo",
+            "row": 28, "col": 30
+        },
+        {
+            "name": "Mecca",
+            "row": 31, "col": 36
+        },
+        {
+            "name": "Zanzibar",
+            "row": 43, "col": 36
+        },
+        {
+            "name": "Antioch",
+            "row": 21, "col": 38
+        },
+        {
+            "name": "Mogadishu",
+            "row": 38, "col": 39
+        },
+        {
+            "name": "Baghdad",
+            "row": 21, "col": 43
+        },
+        {
+            "name": "Basra",
+            "row": 26, "col": 46
+        },
+        {
+            "name": "Samarkand",
+            "row": 16, "col": 48
+        },
+        {
+            "name": "Kashgar",
+            "row": 16, "col": 54
+        },
+        {
+            "name": "Calicut",
+            "row": 32, "col": 55
+        },
+        {
+            "name": "Calcuta",
+            "row": 25, "col": 60
         }
     ]
 };

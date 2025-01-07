@@ -10,6 +10,7 @@ const MOUNTAIN = 5;
 const RIVER = 6;
 const STREAM = 7;
 const DELTA = 10;
+const CITY = 9;
 
 const map = WORLD.map;
 const imagePaths = [
@@ -85,17 +86,47 @@ drawMap() {
         for (let index = 0; index < imagePaths.length; index++) {
 
             const img = new Image();
-
             img.src = imagePaths[index];
             
             img.onload = () => {
                 imagesLoaded++;
                 if (imagesLoaded === imagePaths.length) {
                     this.#drawCanvas();
+                    this.#drawCities();
                 }
             };
             images.push(img);
         }
+}
+
+#drawCities() {
+
+    const img = new Image();
+    img.src = 'img/city.gif';
+    img.onload = () => {
+        console.log('city image loaded');
+        const cities = WORLD.cities;
+        for (let city of cities) {
+
+            this.#ctx.drawImage(img, city.col * tileWidth, city.row * tileHeight, tileWidth, tileHeight);
+
+            const x = (city.col * tileWidth + tileWidth / 2);
+            const y = (city.row * tileHeight + tileHeight / 2);
+
+            this.#ctx.font = '12px Arial';
+            this.#ctx.textAlign = 'center';
+            this.#ctx.textBaseline = 'top';
+            this.#ctx.fillStyle = 'black';
+
+            this.#ctx.fillText(city.name, x + 1, y + 1);
+
+            this.#ctx.fillStyle = 'white';
+            this.#ctx.fillText(city.name, x, y);
+
+
+        }
+    };
+
 }
 
  #drawCanvas() {
